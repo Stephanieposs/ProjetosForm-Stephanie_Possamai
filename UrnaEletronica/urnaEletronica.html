@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+
+    <style>
+        .centro{
+            text-align: center;
+        }
+        #fieldset{
+            width: 300px;
+        }
+        #imgPessoa {
+            height: 200px;
+        }
+        #botoes{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset id="fieldset" class="centro">
+        <h1>Urna Eletrônica</h1>
+
+        <br>
+        <div id="imagem">
+            <img src="https://img.freepik.com/fotos-gratis/pessoa-de-origem-indiana-se-divertindo_23-2150285283.jpg"
+                id="imgPessoa">
+            <figcaption>Fulano de Tal</figcaption>
+        </div>
+
+        
+        <div id="nrCandidato">
+            <label for="idCandidato"></label><br>
+            <input type="number" id="idCandidato" name="nrCandidato" step="1" value="" placeholder="Número Candidado">
+        </div>
+
+        <br>
+        <div id="botoes"><!--Botões -->
+            
+            <button type="submit">Confirmar</button>
+
+            <button type="reset">Cancelar</button>
+
+            <button type="submit" value="0" >Branco</button>
+        </div>
+        <br>
+    </fieldset>
+    </form>
+</body>
+
+</html>

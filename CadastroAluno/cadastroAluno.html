@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #tamanhoFieldset{
+            width: 250px;
+        }
+        .todaTela{
+            width: 240px;
+        }
+        #botoes{
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset id="tamanhoFieldset">
+        <legend>Cadastro de Aluno</legend>
+        <label for="idNome">Nome</label><br>
+        <input type="text" class="todaTela" id="idNome" name="nmNome" value="" >
+
+        <br><br>
+        <label for="idSobrenome">Sobrenome</label><br>
+        <input type="text" class="todaTela" id="idSobrenome" name="nmSobrenome" value="">
+
+        <br><br>
+        <label for="idData">Data de nascimento</label><br>
+        <input type="date" id="idData" name="nmData" value="" max="2017-12-31" min="2000-01-01">
+
+        <br><br>
+        <label for="idEndereco">Endereço</label><br>
+        <input type="text" class="todaTela" id="idEndereco" name="nmEndereco" value="" >
+
+        <br><br>
+        <label for="idNomeMae">Nome da Mãe</label><br>
+        <input type="text" class="todaTela" id="idNomeMae" name="nmNomeMae" value="">
+
+        <br><br>
+        <label for="idNomePai">Nome do Pai</label><br>
+        <input type="text" class="todaTela" id="idNomePai" name="nmNomePai" value="">
+
+        <br><br>
+        <label for="idEmail">Email</label><br>
+        <input type="email" class="todaTela" id="idEmail" name="nmEmail" value="">
+
+        <br><br>
+        <label for="idTelefone">Tel.</label><br>
+        <input type="number" class="todaTela" id="idTelefone" name="nmTelefone" value="" step="1">
+
+        <br><br>
+        <label for="idSerie">Série</label><br>
+        <input type="number" id="idSerie" name="nmSerie" value="" step="1" min="1" max="9">
+
+        <br><br>
+        
+        <label for="idSexo">Sexo</label><br>
+        <input type="radio" id="idSexoFeminino" name="nmSexo" value="">
+        <label for="idSexo">Feminino</label><br>
+        <input type="radio" id="idSexoMasculino" name="nmSexo" value="">
+        <label for="idSexo">Masculino</label>
+
+        <br><br>
+        <div><!------------------Checkbox Necessidades Especiais---------------->
+        <label for="icCbEspeciais">Necessidades Especiais</label><br>
+        <input type="checkbox" id="idSexoFeminino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Defeciência Auditiva</label><br>
+        <input type="checkbox" id="idSexoMasculino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Defeciência Motora</label><br>
+        <input type="checkbox" id="idSexoFeminino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Defeciência Visual</label><br>
+        <input type="checkbox" id="idSexoMasculino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Paralisia Cerebral</label><br>
+        <input type="checkbox" id="idSexoFeminino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Perturbação do Espectro Autista</label><br>
+        <input type="checkbox" id="idSexoMasculino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Perturbação do Foro Psicológico</label><br>
+        <input type="checkbox" id="idSexoFeminino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Perturbação de Aprendizagem</label><br>
+        <input type="checkbox" id="idSexoMasculino" name="nmCbEspeciais" value="">
+        <label for="idCbEspeciais">Altas Habilidades</label><br>
+
+        </div>
+
+        <br><br>
+        <div id="botoes"><!-------------Botões--------------->
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar Tela</button>
+        </div>
+        
+
+        </fieldset>
+    </form>
+</body>
+</html>
