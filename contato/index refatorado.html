@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+
+        <h4>Deixe seu recado...</h6>
+
+        <label for="idNome"></label><br>
+        <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo" required>
+
+        <br><br>
+        <label for="idEmail"></label><br>
+        <input type="email" id="idEmail" name="nmEmail" value="" placeholder="seu@email.com" required>
+
+        <br><br>
+        <label for="idEmpresa"></label><br>
+        <input type="text" id="idEmpresa" name="nmEmpresa" value="" placeholder="Empresa/Organização">
+
+        <br><br>
+        <label for="idTelefone"></label><br>
+        <input type="text" id="idTelefone" name="nmTelefone" value="" placeholder="Tel.">
+
+        <br><br>
+
+        <label for="idMotivo"></label><br>   
+        <input list="idMotivo" placeholder="Motivo do contato" required>
+        <datalist id="idMotivo">
+            <option value="Elogio">Elogio</option>
+            <option value="Problema com produto">Problema com produto</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Outro">Outro</option>
+        </datalist>
+
+        <br><br>
+        <label for="idMensagem"></label><br>
+        <textarea name="nmDesc" id="idDesc" cols="20" rows="5" placeholder="Mensagem" required></textarea>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
