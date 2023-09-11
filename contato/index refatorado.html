@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+
+    <style>
+        #fieldset{
+            width: 150px;
+        }
+    </style>
+
+
 </head>
+
 <body>
     <form action="">
 
-        <h4>Deixe seu recado...</h6>
+        <fieldset id="fieldset">
+        <legend>Deixe seu recado...</legend>
 
         <label for="idNome"></label><br>
         <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo" required>
@@ -23,11 +34,11 @@
 
         <br><br>
         <label for="idTelefone"></label><br>
-        <input type="text" id="idTelefone" name="nmTelefone" value="" placeholder="Tel.">
+        <input type="number" id="idTelefone" name="nmTelefone" step="1" value="" placeholder="Tel.">
 
-        <br><br>
+        <br><br><!--Datalist Motivo-->
 
-        <label for="idMotivo"></label><br>   
+        <label for="idMotivo"></label><br>
         <input list="idMotivo" placeholder="Motivo do contato" required>
         <datalist id="idMotivo">
             <option value="Elogio">Elogio</option>
@@ -44,6 +55,8 @@
         <br><br>
         <button type="submit">Enviar</button>
 
+        </fieldset>
     </form>
 </body>
+
 </html>
